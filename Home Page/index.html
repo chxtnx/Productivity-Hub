@@ -1,0 +1,72 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Hub</title>
+  <script src="script.js" defer></script>
+  <script src="calendar.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.gif" alt="Productivity Hub Logo" height="3%" width="45%">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="../Nav/Log In/login.html">Log In</a></li>
+          <li><a href="../Nav/about.html">About Us</a></li>
+          <li><a href="../Pomodoro and music/pomodoro.html">Pomodoro Timer</a></li>
+        </ul>
+      </nav> 
+    </header>
+  <div class="content">
+    <div class="card">
+      <div class="clock">
+        <div id="time"></div>
+        <div id="date"></div>
+      </div>
+      <div class="calendar-container">
+        <div id="calendar-header">
+          <button id="prev-month">&#8249;</button>
+          <h2 id="month-year"></h2>
+          <button id="next-month">&#8250;</button>
+        </div>
+        <div id="calendar"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="todo-list">
+        <h2>To Do:</h2>
+        <div id="taskList">
+          <input type="text" id="newTask" placeholder="Add a new task...">
+          <br>
+          <br>
+          <button onclick="addTask()">Add Task</button> 
+          <br>
+          <br>
+        </div>
+        <hr>
+
+        <div class="completed-tasks-container">
+          <h3>Completed Tasks:</h3>
+          <div id="completedTaskList"></div>
+        </div>
+      </div>
+           
+  
+    </div>
+  </div>
+  <footer>
+    &copy; 2024 Productivity Hub
+  </footer>
+</body>
+
+</html>
